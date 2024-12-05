@@ -1,12 +1,13 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-# langas, grafikas = plt.subplots()
-# x = [1,2,3,4,5]
-# # y = [1,3,6,8,9]
-# y = [1,5,2,10,3]
-# grafikas.plot(x,y)
-# plt.show()
+# %matplotlib qt
+langas, grafikas = plt.subplots()
+x = [1,2,3,4,5]
+# y = [1,3,6,8,9]
+y = [1,5,2,10,3]
+grafikas.plot(x,y)
+plt.show()
 
 # langas, grafikas = plt.subplots(2,2)
 # x1 = [1,2,3,4,5]
