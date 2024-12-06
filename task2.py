@@ -12,19 +12,27 @@ y2 = [4, 3, 2, 1, -1]
 y3 = [2, 4, 9, 16, 25]
 y4 = [-1, 1, -1, 1, -1]
 
-# def squared(x):
-#     return np.array(x) ** 2
-#
-# def input_a():
-#     a = int(input(f'Įveskite kažkokį skaičių: '))
-#     return np.array(x) * a # tik asys keiciasi
-
 langas, grafikas = plt.subplots(2, 2)
-grafikas[0][0].plot(x, y1)
-grafikas[0][1].plot(x, y2)
-grafikas[1][0].plot(x, y3)
-grafikas[1][1].plot(x, y4)
+grafikas[0][0].plot(x, y1, ls='-', label='line 1', color='red')
+grafikas[0][1].plot(x, y2, ls='dashed', marker='o', color='green', label='2')
+grafikas[1][0].plot(x, y3, ls='-.', label='label', color='blue')
+grafikas[1][1].plot(x, y4, ls='dotted', color='purple', label='4')
+
+grafikas[0][0].set_xlabel("I grafiko x ašis", fontsize='7', color='red')
+grafikas[0][0].set_ylabel("I grafiko y ašis", fontsize='7', color='red')
+
+grafikas[0][1].set_xlabel("II grafiko x ašis", fontsize='10', color='green')
+grafikas[0][1].set_ylabel("II grafiko y ašis", fontsize='10', color='green')
+
+grafikas[1][0].set_xlabel("III grafiko x ašis", fontsize='12', color='blue')
+grafikas[1][0].set_ylabel("II grafiko y ašis", fontsize='12', color='blue')
+
+grafikas[1][1].set_xlabel("IV grafiko x ašis", fontsize='20', color='purple')
+grafikas[1][1].set_ylabel("IV grafiko y ašis", fontsize='20', color='purple')
+
+grafikas[0,0].legend()
+grafikas[0,1].legend()
+grafikas[1,0].legend()
+grafikas[1,1].legend()
 
 plt.show()
-
-# y = [1, 2, 3, 4, 5, 6, 7, 8, 9]
