@@ -22,7 +22,6 @@ grafikas[0][1].plot(x, input_a())
 grafikas[1][0].plot(x, x_three)
 grafikas[1][1].plot(x, x_zero)
 
-
 plt.show()
 
 # y = [1, 2, 3, 4, 5, 6, 7, 8, 9]
